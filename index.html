@@ -466,6 +466,10 @@
             height: 240px;
             overflow: hidden;
             position: relative;
+            background: linear-gradient(135deg, #667eea22 0%, #764ba222 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .project-image img {
@@ -738,7 +742,7 @@
                         <th>Institution</th>
                         <th>Duration</th>
                         <th>GPA/Score</th>
-                        <th>Achievements</th>
+            
                     </tr>
                 </thead>
                 <tbody>
@@ -747,40 +751,21 @@
                         <td>Aadarsh Institute of Technology and Research Center, Vita</td>
                         <td>2022 - 2026</td>
                         <td>7.8/10.0</td>
-                        <td>
-                            <ul>
-                                <li>Graduated with Honors</li>
-                                <li>Specialized in Full Stack Web Development</li>
-                                <li>Academy Award Topper</li>
-                                <li>Active participant in coding competitions</li>
-                            </ul>
-                        </td>
+                        
                     </tr>
                     <tr>
                         <td>Higher Secondary (12th)</td>
                         <td>New English School, Vita</td>
                         <td>2020 - 2022</td>
                         <td>78.87%</td>
-                        <td>
-                            <ul>
-                                <li>Dean's List: All semesters</li>
-                                <li>Excellence in Computer Science</li>
-                                <li>Strong foundation in programming</li>
-                            </ul>
-                        </td>
+                        
                     </tr>
                     <tr>
                         <td>Secondary School (10th)</td>
                         <td>Swami Ramanand Vidyalay, Ramanandnagar</td>
                         <td>2020</td>
                         <td>92.60%</td>
-                        <td>
-                            <ul>
-                                <li>Valedictorian</li>
-                                <li>First Prize in Regional Science Fair</li>
-                                <li>Outstanding academic performance</li>
-                            </ul>
-                        </td>
+                        
                     </tr>
                 </tbody>
             </table>
@@ -818,7 +803,7 @@
                     </tr>
                     <tr>
                         <td>Full Stack Developer Intern</td>
-                        <td>Anvistar pvt. Ltd. , Pune</td>
+                        <td>Anvistar pvt. Ltd., Pune</td>
                         <td>Feb 2025 - March 2025</td>
                         <td>Remote</td>
                         <td>
@@ -853,165 +838,29 @@
     <section id="projects" class="projects">
         <h2 class="section-title">Featured Projects</h2>
         <p class="section-subtitle">Showcasing my work and technical expertise</p>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="plant5.jpg" alt="Project 2">
-                </div>
-                <div class="project-info">
-                    <h3>Sheti Mitra Us Rop Vatika</h3>
-                    <p>Integrated WhatsApp-based order system allowing users to place crop or product orders directly through WhatsApp for easy communication.</p>
-                    <a href=" https://bhagyashrikhatri.github.io/shetimitra2/" class="btn btn-primary">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="task.png" alt="Project 3">
-                </div>
-                <div class="project-info">
-                    <h3>Task Manager</h3>
-                    <p>A smart task management system that allows users to create, track, and manage their daily tasks efficiently with real-time updates.</p>
-                    <a href=" https://bhagyashrikhatri.github.io/TaskManager/" class="btn btn-primary">View Project</a>
-                </div>
-            </div>
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-image">
-                    <img src="story2.png" alt="Project 1">
+                    <img src="story2.png" alt="Smart Story Writer">
                 </div>
                 <div class="project-info">
                     <h3>Smart Story Writer</h3>
                     <p>An AI-based story generator that creates unique and engaging stories from user-given titles.</p>
                     <a href="https://bhagyashrikhatri.github.io/Story-Writer/" class="btn btn-primary">View Project</a>
                 </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Let's collaborate and build something amazing together</p>
-        <div class="contact-form">
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="plant5.jpg" alt="Sheti Mitra">
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="project-info">
+                    <h3>Sheti Mitra Us Rop Vatika</h3>
+                    <p>Integrated WhatsApp-based order system allowing users to place crop or product orders directly through WhatsApp for easy communication.</p>
+                    <a href="https://bhagyashrikhatri.github.io/shetimitra2/" class="btn btn-primary">View Project</a>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="task.png" alt="Task Manager">
                 </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/bhagyashri-khatri-722482292/" title="LinkedIn">📎</a>
-            <a href="#" title="GitHub">💻</a>
-            <a href="#" title="Email">✉️</a>
-        </div>
-        <p>&copy; 2025 Bhagyashri Khatri. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    const offsetTop = targetElement.offsetTop - 80;
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Active nav link
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                const sectionHeight = section.clientHeight;
-                
-                if (window.pageYOffset >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            // Simulate form submission
-            alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon at ${email}.`);
-            
-            this.reset();
-        });
-
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements for animations
-        document.querySelectorAll('.skill-card, .project-card, .about-text, .about-image').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
-</body>
-</html>
-
-
-
-
-
+                <div class="project-info">
